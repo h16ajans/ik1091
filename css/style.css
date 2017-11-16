@@ -87,6 +87,7 @@ a.nav-link {
 }
 /* Mobile Menu */
 .navbar-toggler {
+	border: none;
   border-radius: 0;
 }
 /*=== Breadcrumbs ===*/
