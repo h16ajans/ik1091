@@ -37,6 +37,11 @@ header h1, p {
 	width: 100%;
 	z-index: 3;
 }
+
+.carousel {
+	height: 500px;
+	overflow: hidden;
+}
 /* Menu */
 .navbar-nav {
   margin-left: 10%;
