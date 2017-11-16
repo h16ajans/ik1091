@@ -2,71 +2,81 @@
 /* CSS Document */
 
 body {
-	font-size: 16px;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 form {
-font-size: 0.8em;
-font-family: "Open Sans", Helvetica, Arial, sans-serif;
-font-weight: 400;
+  font-size: 0.8em;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 10%;
+  margin: 0;
 }
 /* Buttons */
 .btn-primary {
-	color: #fff;
-	background-color: #c6b9ad;
-	border: none;
-	text-decoration: none;
-	font-size: 0.875em;
-	padding: 6px 12px;
+  color: #fff;
+  background-color: #c6b9ad;
+  border: none;
+  text-decoration: none;
+  font-size: 0.875em;
+  padding: 6px 12px;
 }
-
-/* header */
+/* Header */
 header h1, p {
   margin-left: 10%;
 }
 /* Menu */
 .navbar-nav {
-margin-left:10%;
+  margin-left: 10%;
 }
-
+.dropdown-item {
+  font-size: 0.7em;
+}
 a.nav-link {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-weight: 600;
-	font-size: 0.675em;
-	letter-spacing: 0em;
-	text-transform: uppercase;
-	color: #C6B9AD;
-padding: 1em 1.25em;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.675em;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #C6B9AD;
+  padding: 1em 1.25em;
 }
 /* Breadcrumbs */
-breadcrumb-item::before {
-	color: #ccc;
-	content: ”\003e”;
+.breadcrumb {
+  background: none;
 }
-
+breadcrumb-item::before {
+  color: #ccc;
+  content: ”\003e”;
+}
 .breadcrumb-item a {
   color: #ccc;
 }
 .breadcrumb-item.active {
   color: #ccc;
 }
-
 /* Contactform */
 footer form {
   width: 80%;
-  margin: 0% 10% 0% 10%;
+  margin: 10%;
   color: #555;
 }
 footer form input:last-of-type {
   float: right;
+  padding: 6px 12px;
 }
-
+form label {
+  margin: 2% 0 1% 0;
+}
 /* Cart */
 thead, tbody tr:last-of-type {
-	background: #c6b9ad;
-	font-weight: 700;
+  background: #c6b9ad;
+  font-weight: 700;
 }
-
 thead tr th:last-of-type {
-   text-align: center;
+  text-align: center;
 }
