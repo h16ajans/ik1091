@@ -10,12 +10,25 @@ font-size: 0.8em;
 font-family: "Open Sans", Helvetica, Arial, sans-serif;
 font-weight: 400;
 }
+/* Buttons */
+.btn-primary {
+	color: #fff;
+	background-color: #c6b9ad;
+	border: none;
+	text-decoration: none;
+	font-size: 0.875em;
+	padding: 6px 12px;
+}
 
 /* header */
 header h1, p {
   margin-left: 10%;
 }
 /* Menu */
+.navbar-nav {
+margin-left:10%;
+}
+
 a.nav-link {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-weight: 600;
@@ -46,4 +59,14 @@ footer form {
 }
 footer form input:last-of-type {
   float: right;
+}
+
+/* Cart */
+thead, tbody tr:last-of-type {
+	background: #c6b9ad;
+	font-weight: 700;
+}
+
+thead tr th:last-of-type {
+   text-align: center;
 }
