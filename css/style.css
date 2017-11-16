@@ -4,11 +4,9 @@
 body {
   font-size: 16px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	
 }
-
 body a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 form {
   font-size: 0.8em;
@@ -21,85 +19,48 @@ form {
   padding: 0 10%;
   margin: 0;
 }
-/* Buttons */
-.btn {
-	text-decoration: none;
-	font-size: 0.875em;
-	border-radius: 0;
-}
-.btn-primary {
-  color: #fff;
-  background-color: #c6b9ad;
-  border: none;
-  text-decoration: none;
-  
-  padding: 6px 12px;
-}
-
-.btn-primary:hover {
-	background-color: #d4cac2;
-}
-
-.btn-secondary {
-  color: #fff;
-  background-color: #7F7F7E;
-  border: none;
-  padding: 6px 12px;
-}
-
-.btn-secondary:hover {
-	background-color: #E5E5E3;
-}
-
-.btn-link {
-	float: right;
-	text-decoration: none;
-	color: #000;
-}
-.btn-link:hover {
-	text-decoration: none;
-	color: #7f7f7f;
-	
-}
-/* Header */
+/*=== Header ===*/
+/*=============*/
 header h1, header p {
   margin-left: 10%;
-	color: #FFF;
+  color: #FFF;
 }
-
-header h1 a{
-	color: #FFF;
+header h1 a {
+  color: #FFF;
 }
-header h1 a:hover{
-	text-decoration: none;
-	color: #FFF;
+header h1 a:hover {
+  text-decoration: none;
+  color: #FFF;
 }
 #siteBrand {
-	position: absolute;
-	top: 5%;
-	left: 0;
-	width: 100%;
-	z-index: 3;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  z-index: 3;
 }
-
+/* Banner */
 #frontPageBanner {
-		max-height: 500px;
-	overflow: hidden;
+  max-height: 500px;
+  overflow: hidden;
 }
-#frontPageBanner img{
-width: auto;
-	max-width: 100%;
+#frontPageBanner img {
+  width: auto;
+  max-width: 100%;
 }
+/* Slider */
 .carousel {
-	max-height: 500px;
-	overflow: hidden;
+  max-height: 500px;
+  overflow: hidden;
 }
-/* Menu */
+/*=== Navbar ===*/
+/*=============*/
+.navbar {
+  padding: 0;
+}
 .navbar-nav {
-  margin-left: 10%;
-}
-.dropdown-item {
-  font-size: 0.7em;
+  margin: 0 10%;
+  width: 40%
 }
 a.nav-link {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -110,16 +71,30 @@ a.nav-link {
   color: #C6B9AD;
   padding: 1em 1.25em;
 }
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* Dropdown */
 .dropdown-menu {
-	border-radius: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
 }
+.dropdown-item {
+  font-size: 0.7em;
+  padding-left: 8px;
+}
+/* Mobile Menu */
 .navbar-toggler {
-	border-radius: 0;
+  border-radius: 0;
 }
-/* Breadcrumbs */
+/*=== Breadcrumbs ===*/
+/*==================*/
 .breadcrumb {
   background: none;
-	font-size: 0.9em;
+  font-size: 0.9em;
+  padding-left: 0;
 }
 breadcrumb-item::before {
   color: #ccc;
@@ -131,7 +106,52 @@ breadcrumb-item::before {
 .breadcrumb-item.active {
   color: #ccc;
 }
-/* Contactform */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\00bb";
+  color: #ccc;
+}
+/*=== Front Page ===*/
+/*=================*/
+.front-page-main {
+  margin-top: 61px;
+}
+/*=== Gallery ===*/
+/*==============*/
+.card {
+  border-radius: 0;
+}
+/*=== Modal ===*/
+/*============*/
+.modal-dialog {
+  width: 100vh;
+  max-width: 60%;
+}
+.modal-content {
+  margin-top: 5%;
+		border-radius: 0px;
+}
+
+.modal-content img {
+	max-width: 450px;
+}
+/*=== Cart ===*/
+/*===========*/
+thead, tfoot {
+  background: #c6b9ad;
+  font-weight: 700;
+}
+thead tr th:last-of-type {
+  text-align: center;
+}
+table .img-thumbnail {
+  max-height: 250px;
+}
+/*=== Footer ===*/
+/*=============*/
+footer {
+}
+/*=== Contactform ===*/
+/*==================*/
 footer form {
   width: 80%;
   margin: 10%;
@@ -144,34 +164,43 @@ form label {
   margin: 0;
 }
 .form-control {
-		border-radius: 0;
+  border-radius: 0;
 }
-/* Front Page*/
-.front-page-main {
-	margin-top: 45px;
+/*=== Buttons ===*/
+/*==============*/
+.btn {
+  text-decoration: none;
+  font-size: 0.875em;
+  border-radius: 0;
 }
-/* Cart */
-thead, tfoot {
-  background: #c6b9ad;
-  font-weight: 700;
+/* Primary */
+.btn-primary {
+  color: #fff;
+  background-color: #c6b9ad;
+  border: none;
+  text-decoration: none;
+  padding: 6px 12px;
 }
-thead tr th:last-of-type {
-  text-align: center;
+.btn-primary:hover {
+  background-color: #d4cac2;
 }
-
-table .img-thumbnail {
-	max-height: 250px;
+/* Secondary */
+.btn-secondary {
+  color: #fff;
+  background-color: #7F7F7E;
+  border: none;
+  padding: 6px 12px;
 }
-/* Gallery */
-.card {
-		border-radius: 0;
+.btn-secondary:hover {
+  background-color: #E5E5E3;
 }
- /* Modal */ 
-.modal-dialog {
-	width: 100vh;
-	max-width: 60%;
+/* Link */
+.btn-link {
+  float: right;
+  text-decoration: none;
+  color: #000;
 }
-
-.modal-content {
-	margin-top: 30%; 
+.btn-link:hover {
+  text-decoration: none;
+  color: #7f7f7f;
 }
