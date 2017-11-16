@@ -4,6 +4,11 @@
 body {
   font-size: 16px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	
+}
+
+body a:hover {
+	text-decoration: none;
 }
 form {
   font-size: 0.8em;
@@ -17,19 +22,58 @@ form {
   margin: 0;
 }
 /* Buttons */
+.btn {
+	text-decoration: none;
+	font-size: 0.875em;
+	border-radius: 0;
+}
 .btn-primary {
   color: #fff;
   background-color: #c6b9ad;
   border: none;
   text-decoration: none;
-  font-size: 0.875em;
+  
   padding: 6px 12px;
 }
-/* Header */
-header h1, p {
-  margin-left: 10%;
+
+.btn-primary:hover {
+	background-color: #d4cac2;
 }
 
+.btn-secondary {
+  color: #fff;
+  background-color: #7F7F7E;
+  border: none;
+  padding: 6px 12px;
+}
+
+.btn-secondary:hover {
+	background-color: #E5E5E3;
+}
+
+.btn-link {
+	float: right;
+	text-decoration: none;
+	color: #000;
+}
+.btn-link:hover {
+	text-decoration: none;
+	color: #7f7f7f;
+	
+}
+/* Header */
+header h1, header p {
+  margin-left: 10%;
+	color: #FFF;
+}
+
+header h1 a{
+	color: #FFF;
+}
+header h1 a:hover{
+	text-decoration: none;
+	color: #FFF;
+}
 #siteBrand {
 	position: absolute;
 	top: 5%;
@@ -38,8 +82,16 @@ header h1, p {
 	z-index: 3;
 }
 
+#frontPageBanner {
+		max-height: 500px;
+	overflow: hidden;
+}
+#frontPageBanner img{
+width: auto;
+	max-width: 100%;
+}
 .carousel {
-	height: 500px;
+	max-height: 500px;
 	overflow: hidden;
 }
 /* Menu */
@@ -58,9 +110,16 @@ a.nav-link {
   color: #C6B9AD;
   padding: 1em 1.25em;
 }
+.dropdown-menu {
+	border-radius: 0;
+}
+.navbar-toggler {
+	border-radius: 0;
+}
 /* Breadcrumbs */
 .breadcrumb {
   background: none;
+	font-size: 0.9em;
 }
 breadcrumb-item::before {
   color: #ccc;
@@ -78,18 +137,41 @@ footer form {
   margin: 10%;
   color: #555;
 }
-footer form input:last-of-type {
+footer form button {
   float: right;
-  padding: 6px 12px;
 }
 form label {
-  margin: 2% 0 1% 0;
+  margin: 0;
+}
+.form-control {
+		border-radius: 0;
+}
+/* Front Page*/
+.front-page-main {
+	margin-top: 45px;
 }
 /* Cart */
-thead, tbody tr:last-of-type {
+thead, tfoot {
   background: #c6b9ad;
   font-weight: 700;
 }
 thead tr th:last-of-type {
   text-align: center;
+}
+
+table .img-thumbnail {
+	max-height: 250px;
+}
+/* Gallery */
+.card {
+		border-radius: 0;
+}
+ /* Modal */ 
+.modal-dialog {
+	width: 100vh;
+	max-width: 60%;
+}
+
+.modal-content {
+	margin-top: 30%; 
 }
