@@ -2,5 +2,23 @@
 /* CSS Document */
 
 body {
-
+}
+header h1 {
+margin-left: 10%;
+}
+header p {
+margin-left: 10%;
+}
+/* Breadcrumbs */
+.breadcrumb-item a {
+  color: #ccc;
+}
+.breadcrumb-item.active {
+  color: #ccc;
+}
+/* Contactform */
+footer form {
+  width: 80%;
+  margin: 0% 10% 0% 10%;
+  color: #555;
 }
