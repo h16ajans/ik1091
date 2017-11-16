@@ -29,6 +29,14 @@ form {
 header h1, p {
   margin-left: 10%;
 }
+
+#siteBrand {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+}
 /* Menu */
 .navbar-nav {
   margin-left: 10%;
