@@ -87,7 +87,7 @@ a.nav-link {
 }
 /* Mobile Menu */
 .navbar-toggler {
-	border: none;
+  border: none;
   border-radius: 0;
 }
 /*=== Breadcrumbs ===*/
@@ -129,11 +129,10 @@ breadcrumb-item::before {
 }
 .modal-content {
   margin-top: 5%;
-		border-radius: 0px;
+  border-radius: 0px;
 }
-
 .modal-content img {
-	max-width: 450px;
+  max-width: 450px;
 }
 /*=== Cart ===*/
 /*===========*/
