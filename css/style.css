@@ -57,7 +57,7 @@ header h1 a:hover {
 /*=============*/
 #navbar {
   padding: 0;
-	z-index: 200;
+  z-index: 200;
 }
 .sticky {
   position: fixed;
@@ -97,7 +97,7 @@ a.nav-link {
 .dropdown-item:focus {
   background-color: #F8F9FA;
   outline: none;
-	color: #000;
+  color: #000;
 }
 /* Mobile Menu */
 .navbar-toggler {
@@ -149,9 +149,8 @@ breadcrumb-item::before {
   max-width: 450px;
 }
 .modal-body p:last-of-type {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
-
 /*=== Cart ===*/
 /*===========*/
 thead, tfoot {
@@ -164,32 +163,34 @@ thead tr th:last-of-type {
 table .img-thumbnail {
   max-height: 250px;
 }
+.img-thumbnail {
+  border: none;
+}
 
 /* Cart Mobile */
 @media screen and (max-width: 576px) {
 thead tr th:nth-child(2) {
-	display: none;
-	}
+  display: none;
+}
 thead tr th:nth-child(3) {
-	display: none;
-	}
+  display: none;
+}
 tbody tr td:nth-child(4) {
-	display: none;
-	}
+  display: none;
+}
 tbody tr td:nth-child(5) {
-	display: none;
-	}
+  display: none;
+}
 tfoot tr td:first-of-type {
-	display: none;
-	}
-	tfoot tr td:last-of-type {
-	display: none;
-	}
-	table table-hover tr {
-	width: 100%;
-		}	
-	}
-
+  display: none;
+}
+tfoot tr td:last-of-type {
+  display: none;
+}
+table table-hover tr {
+  width: 100%;
+}
+}
 /*=== Footer ===*/
 /*=============*/
 footer {
@@ -257,8 +258,6 @@ form label {
 button.close {
   outline: none;
 }
-
 .visible {
-		display: block !important;
-
+  display: block !important;
 }
