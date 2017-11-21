@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-body a:hover {
+a, a:link, a:visited, a:active, a:hover {
   text-decoration: none;
 }
 form {
@@ -55,8 +55,17 @@ header h1 a:hover {
 }
 /*=== Navbar ===*/
 /*=============*/
-.navbar {
+#navbar {
   padding: 0;
+	z-index: 200;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 .navbar-nav {
   margin: 0 10%;
@@ -85,6 +94,11 @@ a.nav-link {
   font-size: 0.7em;
   padding-left: 8px;
 }
+.dropdown-item:focus {
+  background-color: #F8F9FA;
+  outline: none;
+	color: #000;
+}
 /* Mobile Menu */
 .navbar-toggler {
   border: none;
@@ -94,7 +108,7 @@ a.nav-link {
 /*==================*/
 .breadcrumb {
   background: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-left: 0;
 }
 breadcrumb-item::before {
@@ -114,7 +128,7 @@ breadcrumb-item::before {
 /*=== Front Page ===*/
 /*=================*/
 .front-page-main {
-  margin-top: 61px;
+  margin-top: 59px;
 }
 /*=== Gallery ===*/
 /*==============*/
@@ -123,6 +137,9 @@ breadcrumb-item::before {
 }
 /*=== Modal ===*/
 /*============*/
+.modal-header {
+  box-shadow: none !important;
+}
 .modal-dialog {
   width: 100vh;
   max-width: 60%;
@@ -181,8 +198,12 @@ form label {
   text-decoration: none;
   padding: 6px 12px;
 }
-.btn-primary:hover {
-  background-color: #d4cac2;
+.btn-primary:hover, .btn-primary:active {
+  background-color: #d4cac2 !important;
+  box-shadow: none !important;
+}
+.btn-primary:focus, .btn-secondary:focus {
+  box-shadow: none !important;
 }
 /* Secondary */
 .btn-secondary {
@@ -191,8 +212,9 @@ form label {
   border: none;
   padding: 6px 12px;
 }
-.btn-secondary:hover {
-  background-color: #E5E5E3;
+.btn-secondary:hover, .btn-secondary:active {
+  background-color: #E5E5E3 !important;
+  box-shadow: none !important;
 }
 /* Link */
 .btn-link {
@@ -203,4 +225,13 @@ form label {
 .btn-link:hover {
   text-decoration: none;
   color: #7f7f7f;
+}
+/* CLose */
+button.close {
+  outline: none;
+}
+
+.visible {
+		display: block !important;
+
 }
