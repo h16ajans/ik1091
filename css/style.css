@@ -137,12 +137,9 @@ breadcrumb-item::before {
 }
 /*=== Modal ===*/
 /*============*/
-.modal-header {
-  box-shadow: none !important;
-}
 .modal-dialog {
   width: 100vh;
-  max-width: 60%;
+  max-width: 100%;
 }
 .modal-content {
   margin-top: 5%;
@@ -151,6 +148,10 @@ breadcrumb-item::before {
 .modal-content img {
   max-width: 450px;
 }
+.modal-body p:last-of-type {
+	font-size: 1.5em;
+}
+
 /*=== Cart ===*/
 /*===========*/
 thead, tfoot {
@@ -163,6 +164,32 @@ thead tr th:last-of-type {
 table .img-thumbnail {
   max-height: 250px;
 }
+
+/* Cart Mobile */
+@media screen and (max-width: 576px) {
+thead tr th:nth-child(2) {
+	display: none;
+	}
+thead tr th:nth-child(3) {
+	display: none;
+	}
+tbody tr td:nth-child(4) {
+	display: none;
+	}
+tbody tr td:nth-child(5) {
+	display: none;
+	}
+tfoot tr td:first-of-type {
+	display: none;
+	}
+	tfoot tr td:last-of-type {
+	display: none;
+	}
+	table table-hover tr {
+	width: 100%;
+		}	
+	}
+
 /*=== Footer ===*/
 /*=============*/
 footer {
