@@ -12,16 +12,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-$(document).ready(function(){
-"use strict";
-	
-
-
-					 
-					 $(" #navbarDropdownMenuLink").on("click", function(){
-           $(this).next().toggleClass("visible");
-           });   			 
-		
-	
-        });
